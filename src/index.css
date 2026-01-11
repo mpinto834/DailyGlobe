@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-daily-dark: #1a1a1a;
+  --color-daily-gray: #f4f4f4;
+  --color-daily-accent: rgb(72, 102, 73);
+
+  --color-jotep-blue: #4DA8DA;
+  --color-jotep-blue-hover: #3B8FB9;
+  --color-jotep-yellow: #F2C94C;
+  --color-jotep-yellow-hover: #D9B443;
+  --color-jotep-dark: #1a202c;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+
+  --animate-gradient: gradient 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes gradient {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+/* Custom Base Styles */
+/* In v4, we can target elements directly without @layer base technically, 
+   but keeps it clean. Tailwind v4 resets are included in @import "tailwindcss" */
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-stone-50 text-gray-900 antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}

@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'daily-dark': '#1a1a1a',
+        'daily-gray': '#f4f4f4',
+        'daily-accent': 'rgb(72,102,73)', // User requested green
+        'jotep-blue': '#4DA8DA',
+        'jotep-blue-hover': '#3B8FB9',
+        'jotep-yellow': '#F2C94C',
+        'jotep-yellow-hover': '#D9B443',
+        'jotep-dark': '#1a202c',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
+      animation: {
+        'gradient': 'gradient 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        gradient: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}
