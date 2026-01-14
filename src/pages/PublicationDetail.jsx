@@ -4,11 +4,15 @@ import { motion } from 'framer-motion';
 import { getPublicationById, getRecentPublications } from '../data/publications';
 import PublicationCard from '../components/PublicationCard';
 import SEO from '../components/SEO';
+import { isYouTubeUrl, getYouTubeEmbedUrl } from '../utils/media';
 
 const PublicationDetail = () => {
     const { id } = useParams();
     const publication = getPublicationById(id);
     const relatedPublications = getRecentPublications(3).filter(p => p.id !== publication?.id).slice(0, 3);
+
+    const isVideo = isYouTubeUrl(publication?.image);
+    const embedUrl = isVideo ? getYouTubeEmbedUrl(publication.image) : null;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -45,18 +49,28 @@ const PublicationDetail = () => {
                     </div>
                 </div>
 
-                {/* Hero Image */}
+                {/* Hero Media */}
                 <div className="mb-12">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="aspect-video w-full overflow-hidden"
+                        className="aspect-video w-full overflow-hidden bg-gray-100"
                     >
-                        <img
-                            src={publication.image}
-                            alt={publication.title}
-                            className="w-full h-full object-cover"
-                        />
+                        {isVideo ? (
+                            <iframe
+                                src={embedUrl}
+                                title={publication.title}
+                                className="w-full h-full border-0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        ) : (
+                            <img
+                                src={publication.image}
+                                alt={publication.title}
+                                className="w-full h-full object-cover"
+                            />
+                        )}
                     </motion.div>
                 </div>
 
