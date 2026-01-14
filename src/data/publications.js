@@ -32,7 +32,7 @@ A Daily Globe falou ainda com um dos candidatos, Dickimbé Mutumbo, que classifi
         type: "Interview",
         date: "Oct 08, 2025",
         author: "Michael Ross",
-        image: "https://picsum.photos/seed/architect/800/600",
+        image: "https://youtu.be/4iLeXt3ETAk?si=meFR3Uq_ShVNrfgD",
         content: `
             <p><strong>Q: What inspired your latest project?</strong></p>
             <p>A: I wanted to create a space that breathes...</p>
