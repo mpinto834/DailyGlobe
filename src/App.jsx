@@ -20,7 +20,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/DailyGlobe">
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-gray-900">
         <Navbar />

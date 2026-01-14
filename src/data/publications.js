@@ -1,16 +1,16 @@
 export const publications = [
     {
         id: 1,
-        title: "The Future of Digital Journalism",
-        summary: "Exploring how AI and data analytics are reshaping the newsroom and the way we consume information.",
+        title: "DPSA abre novo recrutramento",
+        summary: "DPSA abre novo recrutamento para reforçar a segurança do estado. Chefia confiante numa melhoria da resposta à criminalidade com os novos recrutas.",
         type: "Journal",
-        date: "Oct 12, 2025",
-        author: "Sarah Jenkins",
-        image: "https://picsum.photos/seed/journalism/800/600",
+        date: "Jan 11, 2026",
+        author: "Martim Lancaster",
+        image: "https://r2.fivemanage.com/wkbglMRMdBbU0lVS7lFts/image.png",
         content: `
-            <p>The landscape of journalism is undergoing a seismic shift...</p>
-            <p>Artificial Intelligence tools are now capable of analyzing vast datasets...</p>
-            <p>However, the human element remains irreplaceable...</p>
+            <p>No passado domingo, dia 11 de janeiro, decorreu o recrutamento de novos agentes para o Departamento de Polícia de San Andreas. A iniciativa integrou um processo rigoroso de seleção e formação, acompanhado pela Daily Globe, com o objetivo de preparar futuros profissionais para o exercício das funções policiais. 
+De acordo com o capitão Nuno Oliveira, esta nova incorporação de recrutas é vista com elevada expetativa, representando um reforço significativo na capacidade operacional da polícia e uma resposta estruturada ao combate ao crime em San Andreas. 
+A Daily Globe falou ainda com um dos candidatos, Dickimbé Mutumbo, que classificou o recrutamento como exigente e desgastante, sublinhando, no entanto, o sentimento de honra e responsabilidade por poder integrar o Departamento de Polícia de San Andreas.</p>
         `
     },
     {
