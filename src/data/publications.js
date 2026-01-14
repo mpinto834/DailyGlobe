@@ -15,15 +15,14 @@ A Daily Globe falou ainda com um dos candidatos, Dickimbé Mutumbo, que classifi
     },
     {
         id: 2,
-        title: "Global Summit Reaches New Climate Accord",
-        summary: "World leaders agree on ambitious targets to reduce carbon emissions by 2030.",
-        type: "News",
-        date: "Oct 10, 2025",
+        title: "Pancadaria após trafulhice no Coffee Noir",
+        summary: "Homem espancado após renuncia do parceiro em alegada sueca ilegal no Coffee Noir. Polícia presente afirma que a renuncia foi má planeada!",
+        type: "Trolhiçes",
+        date: "Jan 13, 2025",
         author: "David Chen",
-        image: "https://picsum.photos/seed/climate/800/600",
+        image: "https://r2.fivemanage.com/wkbglMRMdBbU0lVS7lFts/0321321321.png",
         content: `
-            <p>In a historic agreement, representatives from over 190 nations...</p>
-            <p>The new targets aim to limit global warming to 1.5 degrees Celsius...</p>
+            <p>Um confronto violento e de extrema gravidade marcou a noite em Vespucci, no estabelecimento Coffee-Noir. De acordo com as autoridades, a ocorrência teve origem num conflito entre dois parceiros durante um jogo de sueca ilegal. situação rapidamente escalou para agressões físicas, resultando num cenário descrito como particularmente violento e sanguinário. Do incidente resultou uma vítima em estado grave, que teve de ser transportada de urgência para uma unidade hospitalar, onde permaneceu internada.</p>
         `
     },
     {

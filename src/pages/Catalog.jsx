@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 
 const Catalog = () => {
     const [filter, setFilter] = useState('All');
-    const categories = ['All', 'Journal', 'News', 'Interview'];
+    const categories = ['All', 'Journal', 'News', 'Interview', 'Trolhiçes'];
 
     // Get filtered publications
     const publications = filter === 'All'
